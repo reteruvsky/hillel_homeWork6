@@ -23,22 +23,22 @@ public class Main {
         for (int i = 0; i < participants.size(); i++) {
 
             for (int j = 0; j < obstacles.size(); j++) {
-                if(obstacles.get(j).getName().equals("Wall") && obstacles.get(j).getHeight() < participants.get(i).getJumpHeight()) {
+                if (obstacles.get(j).getName().equals("Wall") && obstacles.get(j).getHeight() < participants.get(i).getJumpHeight()) {
                     System.out.println("Участник " + participants.get(i).getName() +
                             " прошел препятствие " + obstacles.get(j).getName() +
                             " на дистанции " + obstacles.get(j).getHeight());
-                } else if(obstacles.get(j).getName().equals("Wall")) {
+                } else if (obstacles.get(j).getName().equals("Wall")) {
                     System.out.println("Участник " + participants.get(i).getName() +
                             " не прошел препятствие " + obstacles.get(j).getName() +
                             " на дистанции " + obstacles.get(j).getHeight());
                     break;
                 }
 
-                if(obstacles.get(j).getName().equals("Racetrack") && obstacles.get(j).getLength() < participants.get(i).getRunLength()) {
+                if (obstacles.get(j).getName().equals("Racetrack") && obstacles.get(j).getLength() < participants.get(i).getRunLength()) {
                     System.out.println("Участник " + participants.get(i).getName() +
                             " прошел препятствие " + obstacles.get(j).getName() +
                             " на дистанции " + obstacles.get(j).getLength());
-                } else if(obstacles.get(j).getName().equals("Racetrack")) {
+                } else if (obstacles.get(j).getName().equals("Racetrack")) {
                     System.out.println("Участник " + participants.get(i).getName() +
                             " не прошел препятствие " + obstacles.get(j).getName() +
                             " на дистанции " + obstacles.get(j).getLength());

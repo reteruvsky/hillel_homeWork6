@@ -36,7 +36,7 @@ class Main {
     public static void main(String[] args) {
         ArrayList<GeometricShape> array = new ArrayList<>();
 
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             array.add(new Circle());
             array.add(new Triangle());
             array.add(new Square());
@@ -46,7 +46,7 @@ class Main {
     public void sumArea(ArrayList<GeometricShape> arrayList) {
         double sum = 0;
 
-        for(int i = 0; i < arrayList.size(); i++) {
+        for (int i = 0; i < arrayList.size(); i++) {
             sum += arrayList.get(i).shapeArea(Math.random(), Math.random());
         }
         System.out.println(sum);
